@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0d1b2a;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #1b263b, #0d1b2a);
+  padding: 60px 0;
+}
+
+.profile {
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid #007BFF;
+}
+
+h1, h2 {
+  color: #00b4d8;
+}
+
+.skills, .projects, .contact {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bar {
+  height: 10px;
+  background: #007BFF;
+  border-radius: 5px;
+}
+
+.project-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: #1b263b;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  background: #1a1a1a;
+  text-align: center;
+  padding: 30px 10px;
+  color: #ccc;
+}
+
+/* Animasi Transisi */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
